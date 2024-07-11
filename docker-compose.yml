@@ -4,6 +4,7 @@ services:
   spring-vkapi:
     build: .
     environment:
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-default}
       - VK_TOKEN=${VK_TOKEN}
       - VK_GROUP_ID=${VK_GROUP_ID}
       - LOGSTASH_HOST=${LOGSTASH_HOST}

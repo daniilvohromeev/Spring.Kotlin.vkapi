@@ -5,7 +5,7 @@ server:
   port: ${PORT:8081}
 vk:
   token: ${VK_API_TOKEN:vk1.a.5O2NH_1p2VYBTVp36_ySS4e40IqszZ2jxvxrCEzkd9Gi42jIX8sx_DD4neSqv7TuGc_YZGQeBA2Gv0YMUpc_fxKofvqkO-YLjHEPRegUm6-rGICeshBr2s0WIW6b0-pdGYQ-w1JdI6I86PevPi_HPPHpL2TOBINVIpxiFQnckjVNXbofcP0aK9hDeOlCHqhYGdfblGXZDRTdnaqX2iqJfw}
-  api-version: ${API_VERSION:5.199}
+  api-version: ${API_VERSION:5.130}
   group-id: ${GROUP_ID:226538913}
   secret: ${SECRET_VK_API:qwasdsfsvwetafgdfgsdfcwabtgsd}
 management:

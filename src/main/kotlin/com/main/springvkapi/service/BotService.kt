@@ -19,13 +19,14 @@ class BotService(
     fun handleMessageNew(data: Map<String, Any>) {
         val secretKey = data["secret"] as? String ?: return
         if (secretKey == secret) {
-            val message = data["object"] as? Map<*, *> ?: return
+            val obj = data["object"] as? Map<*, *> ?: return
+            val message = obj["message"] as? Map<*, *> ?: return
             val text = message["text"] as? String
-            val peerId = message["peer_id"] as? Int
-            if (text != null && peerId != null) {
-                val responseText = "Вы написали: $text"
-                messageService.sendMessage(peerId, responseText)
+            val peerId = message["peer_id"] as? Int ?: return
+            if (text != null) {
+                messageService.sendMessage(peerId, "Вы написали: $text")
             }
         }
     }
+
 }
