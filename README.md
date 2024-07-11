@@ -13,8 +13,8 @@
 
 1. Клонируйте репозиторий:
     ```sh
-    git clone https://github.com/your-repo/spring-vkapi.git
-    cd spring-vkapi
+    git clone https://github.com/daniilvohromeev/Spring.Kotlin.vkapi.git
+    cd Spring.Kotlin.vkapi
     ```
 
 2. Установите необходимые переменные окружения:
