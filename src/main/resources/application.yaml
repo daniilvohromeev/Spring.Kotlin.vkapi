@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Spring.vkapi
+server:
+  port: ${PORT:8081}
+vk:
+  token: ${VK_API_TOKEN}
+  api-version: ${API_VERSION}
+  group-id: ${GROUP_ID}
+  secret: ${SECRET_VK_API}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  endpoint:
+    prometheus:
+      enabled: true
